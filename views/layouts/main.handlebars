@@ -7,13 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script src="https://kit.fontawesome.com/e525d32b69.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/style.css">
   <title>THE Coding Blog</title>
 </head>
-<style>
-  a {
-    color: #ee6e73;
-  }
-</style>
 
 <body>
   <nav>
@@ -53,15 +49,52 @@
       </ul>
     </div>
   </nav>
+  <main>
   <div class="container">
     <div class="section">
       {{{ body }}}
     </div>
   </div>
+  </main>
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
 </body>
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Tech Blog</h5>
+        <p class="grey-text text-lighten-4">Read & Write with other members of the Tech Blog Community.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li>
+            <a class="grey-text text-lighten-3" href="/">Home</a>
+          </li>
+          <li>
+            <a class="grey-text text-lighten-3" href="/dashboard">Dashboard</a>
+          </li>
+          <li>
+            <a class="grey-text text-lighten-3" href="/login">Login</a>
+          </li>
+          <li>
+            <a class="grey-text text-lighten-3" href="/signup">Signup</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2020 Raquel Scofield
+      <a class="grey-text text-lighten-4 right" href="https://github.com/RaquelLee/tech_blog">Tech Blog on GitHub <i
+          class="fab fa-github"></i></a>
+    </div>
+  </div>
+</footer>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 </html>

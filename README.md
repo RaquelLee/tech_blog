@@ -2,7 +2,7 @@
 ![license](https://img.shields.io/github/license/raquellee/tech_blog)<br />
 
 ## Technologies Used 
-* Heorku
+* Heroku
 * Handlebars
 * MySQL
 * Express.js
@@ -10,7 +10,7 @@
 * Node.js
 
 ## :cinema: Deployed to Heroku
-[Tech Blog on Heroku]()
+[Tech Blog on Heroku](https://quiet-taiga-91709.herokuapp.com/)
 
 ## :busts_in_silhouette:  Credits 
 Raquel Scofield ![followme](https://img.shields.io/github/followers/raquellee?label=Follow&style=social)
