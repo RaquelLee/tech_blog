@@ -1,16 +1,25 @@
 # tech_blog
 ![license](https://img.shields.io/github/license/raquellee/tech_blog)<br />
 
+Tech Blog is a site created for anyone who enjoys reading and weriting about tech! Create your own account, view other users posts, interact with comments, and create your own content. 
+
+## :cinema: Usage
+[usage gif](https://quiet-taiga-91709.herokuapp.com/)
+
+
+## Deployed to Heroku
+[Tech Blog on Heroku](https://quiet-taiga-91709.herokuapp.com/)
+
 ## Technologies Used 
-* Heroku
-* Handlebars
+* bcrypt
 * MySQL
-* Express.js
-* Sequelize
+* Sequelize ORM
+* Express.js Session & Routing
+* Handlebars
+* Heroku
 * Node.js
 
-## :cinema: Deployed to Heroku
-[Tech Blog on Heroku](https://quiet-taiga-91709.herokuapp.com/)
+## Installation
 
 ## :busts_in_silhouette:  Credits 
 Raquel Scofield ![followme](https://img.shields.io/github/followers/raquellee?label=Follow&style=social)
