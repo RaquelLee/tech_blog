@@ -4,7 +4,7 @@
 Tech Blog is a site created for anyone who enjoys reading and weriting about tech! Create your own account, view other users posts, interact with comments, and create your own content. 
 
 ## :cinema: Usage
-[usage gif](https://quiet-taiga-91709.herokuapp.com/)
+[usage gif](https://github.com/RaquelLee/tech_blog/blob/main/public/assets/images/TechBlog.gif)
 
 
 ## Deployed to Heroku
