@@ -1,0 +1,58 @@
+<div class="row">
+    {{#if rendPost.comments}}
+    <div class="col l6">
+        {{else}}
+        <div class="col l12">
+            {{/if}}
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">
+                        <h3>{{rendPost.title}}</h3>
+                    </span>
+                    <h5><i class="fas fa-feather-alt"></i>
+                        {{rendPost.user.name}} on
+                        {{format_date rendPost.date_created}}</h5>
+                    <div class="section">
+                        <p>{{rendPost.content}}</p>
+                    </div>
+                    <div class="section">
+                        <button class="btn" id="commentBtn">
+                            <i class="far fa-comments"></i> Leave a Comment</button>
+                        <div class="hide" id="commentDiv">
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    Comment</span>
+                                <textarea id="commentText" class="form-control" aria-label="With textarea">
+                            </textarea>
+                            </div>
+                            <div>
+                                <button class="btn" type="submit" id="saveCommentBtn" data-id="{{rendPost.id}}">Submit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{#if rendPost.comments}}
+        <div class="col l6">
+            <div class="card">
+                <div class="card-content">
+                    {{#each rendComms as |comment|}}
+                    <div class="section">
+                        <p>{{{comment.comment}}}</p>
+                        <p class="right">
+                            <i class="text-grey-lighten-4">
+                                {{{comment.user.name}}}
+                                {{{format_date comment.date_created}}}</i>
+                        </p>
+                    </div>
+                    <div class="divider"></div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        {{/if}}
+    </div>
+
+<script src="/js/comment.js"></script>
