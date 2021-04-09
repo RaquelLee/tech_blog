@@ -1,7 +1,7 @@
 # tech_blog
 ![license](https://img.shields.io/github/license/raquellee/tech_blog)<br />
 
-Tech Blog is a site created for anyone who enjoys reading and writing about tech! Create your own account, view other users posts, interact with comments, create ( or update and delete!) your own content.
+Tech Blog is a site created for anyone who enjoys reading and writing about tech! Create your own account, view other users posts, interact with comments, create (or update and delete!) your own content.
 
 ## :cinema: Usage
 ![usage gif](https://github.com/RaquelLee/tech_blog/blob/main/public/assets/images/TechBlog.gif)
@@ -16,13 +16,12 @@ Tech Blog is a site created for anyone who enjoys reading and writing about tech
 * bcrypt
 * MySQL
 * Sequelize ORM
-* Express.js Session & Routing
-* Handlebars
+* Express.js Session, Routing & Handlebars
 * Heroku
 * Node.js
 
 ## Installation
-After cloning to your local machine, include .env file with all relevant variables, such as ddtabase name, username, and password.
+After cloning to your local machine, include .env file with all relevant variables, such as database name, username, and password.
 
 Use schema.sql in db directory to create the database in MySQL workbench.
 
