@@ -9,7 +9,7 @@
                     <span class="card-title">
                         <h3>{{rendPost.title}}</h3>
                     </span>
-                    <h5><i class="fas fa-pen-alt"></i>  {{rendPost.user.name}} on {{format_date rendPost.date_created}}</h5>
+                    <h5 class="blue-grey-text text-darken-3"><i class="fas fa-pen-alt"></i>  {{rendPost.user.name}} on {{format_date rendPost.date_created}}</h5>
                     <div class="section">
                         <p>{{rendPost.content}}</p>
                     </div>
@@ -19,10 +19,10 @@
                         <div class="hide" id="commentDiv">
                             <div class="input-group">
                                 <span class="input-group-text"></span>Comment</span>
-                                <textarea id="commentText" class="form-control" aria-label="With textarea"></textarea>
+                                <textarea id="commentText" class="materialize-textarea" aria-label="With textarea"></textarea>
                             </div>
                             <div>
-                                <button class="btn" type="submit" id="saveCommentBtn" data-id="{{rendPost.id}}">Submit
+                                <button class="btn" type="submit" id="saveCommentBtn" data-id="{{rendPost.id}}"><i class="far fa-save"></i> Submit
                                 </button>
                             </div>
                         </div>
@@ -37,12 +37,11 @@
                     <span class="card-title">
                         Comments <i class="far fa-comments"></i>
                     </span>
-
                     {{#each rendComms as |comment|}}
                     <div class="section">
                         <p>{{{comment.comment}}}</p>
                         <p class="right">
-                        <i class="grey-text text-darken-1">
+                        <i class="blue-grey-text text-lighten-1">
                         {{{comment.user.name}}}
                         {{{format_date comment.date_created}}}</i></p>
                     </div>

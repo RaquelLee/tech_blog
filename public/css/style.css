@@ -11,3 +11,8 @@ body {
 main {
     flex: 1 0 auto;
 }
+
+p, h1, h2, h3, h4, .material-icons {
+    color: #263238;
+}
+
