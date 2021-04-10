@@ -9,13 +9,13 @@
                     <span class="card-title">
                         <h3>{{rendPost.title}}</h3>
                     </span>
-                    <h5><i class="fas fa-feather-alt"></i> {{rendPost.user.name}} on {{format_date rendPost.date_created}}</h5>
+                    <h5><i class="fas fa-pen-alt"></i>  {{rendPost.user.name}} on {{format_date rendPost.date_created}}</h5>
                     <div class="section">
                         <p>{{rendPost.content}}</p>
                     </div>
                     <div class="section">
                         <button class="btn" id="commentBtn">
-                            <i class="far fa-comments"></i> Leave a Comment</button>
+                        <i class="fas fa-comment-medical"></i> Add a Comment</button>
                         <div class="hide" id="commentDiv">
                             <div class="input-group">
                                 <span class="input-group-text"></span>Comment</span>
@@ -34,11 +34,15 @@
         <div class="col l6">
             <div class="card">
                 <div class="card-content">
+                    <span class="card-title">
+                        Comments <i class="far fa-comments"></i>
+                    </span>
+
                     {{#each rendComms as |comment|}}
                     <div class="section">
                         <p>{{{comment.comment}}}</p>
                         <p class="right">
-                        <i class="text-grey-lighten-4">
+                        <i class="grey-text text-darken-1">
                         {{{comment.user.name}}}
                         {{{format_date comment.date_created}}}</i></p>
                     </div>
